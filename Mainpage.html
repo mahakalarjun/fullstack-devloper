@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Mainpage.css">
+    <!--font icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
+    <title>ZARA Fashion</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--nav bar-->
+        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a href="./Mainpage.html" class="navbar-brand">
+                    <img src="./label imgs/logo zara.png" width="110" height="45" alt="" loading="lazy"
+                        class="d-inline-block align-top">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active me-5">
+                            <a href="./Mainpage.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a>
+                        </li>
+
+                        <li class="nav-item me-5">
+                            <a href="#scrollspyHeading3" class="nav-link"><i class="fa-regular fa-clock"></i>
+                                WATCHES</a>
+                        </li>
+
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-brands fa-shopify"></i> CLOTHES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#scrollspyHeading1">MENS</a>
+                                <a class="dropdown-item" href="#scrollspyHeading2">WOMENS</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item me-5">
+                            <a href="./about.html" class="nav-link"><i class="fa-regular fa-address-card"></i> ABOUT</a>
+                        </li>
+
+                        <li class="nav-item me-3 ">
+                            <a href="#offcanvasExample" data-bs-toggle="offcanvas" class="nav-link"
+                                aria-controls="offcanvasExample">
+                                <i class="fa-solid fa-cart-shopping" id="cart-icon" name="cart"></i> Cart
+                            </a>
+                            <span
+                                class="position-absolute top-50 start-25 cart-count translate-middle badge rounded-pill bg-danger">
+                            </span>
+                        </li>
+
+                     
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--offcanvas for cart-->
+        <div class="offcanvas offcanvas-end w-100 fade" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <!--cart header-->
+            <div class="offcanvas-header">
+                <div class="container-fluid">
+
+                    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                        <div class="container">
+
+                            <a href="./Mainpage.html" class="navbar-brand">
+                                <img src="./label imgs/logo zara.png" width="110" height="45" alt="" loading="lazy"
+                                    class="d-inline-block align-top">
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mynavbar" aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="mynavbar">
+
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item active me-5">
+                                        <a href="./Mainpage.html" class="nav-link"><i class="fa-solid fa-house"></i>
+                                            HOME</a>
+                                    </li>
+
+                                    <li class="nav-item me-5">
+                                        <a href="#scrollspyHeading3" class="nav-link"><i
+                                                class="fa-regular fa-clock"></i>
+                                            WATCHES</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown me-5">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa-brands fa-shopify"></i> CLOTHES
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#scrollspyHeading1">MENS</a>
+                                            <a class="dropdown-item" href="#scrollspyHeading2">WOMENS</a>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item me-5">
+                                        <a href="./about.html" class="nav-link"><i
+                                                class="fa-regular fa-address-card"></i> ABOUT</a>
+                                    </li>
+
+
+
+                                    <!-- <h1 class="gocart">Cart</h1>
+                                <div class="box">
+                                    <div class="cart-count">0</div>
+                                    <i class="fa-solid fa-cart-shopping" id="cart-icon" name="cart"></i>
+                                </div> -->
+
+                                </ul>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item align-top ">
+                                        <a href="#offcanvasExample" class="nav-link fs-2 text-danger "
+                                            data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <i class="fa-solid fa-right-from-bracket"></i>Exit
+                                            Cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button> -->
+
+            </div>
+
+            <!--cart body-->
+            <div class="offcanvas-body">
+                <div class="container my-5">
+                    <div class="cart">
+                        <!--cart-content-->
+
+                        <div class="cart-content">
+
+                            <!--cart heading-->
+                            <div class="cart-headings fs-6">
+                                <div class="row text-center">
+                                    <div class="col-6 text-start">
+                                        Items
+                                    </div>
+                                    <div class="col-2">
+                                        Quantity
+                                    </div>
+                                    <div class="col-2">
+                                        Subtotal
+                                    </div>
+                                    <div class="col-2">
+                                        Remove
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <!--cart box-->
+                            <!-- <div class="cart-box">
+                                <div class="row mt-4">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <img src="./shoping imgs/tshirtimg1.avif" class="img-fluid"
+                                            style="width: 120px; height: 120px;object-fit: cover;" alt="">
+                                        <div class="price-box ms-3">
+                                            <div class="cart-con-title text-success fs-5 fw-bold">urban buccachi</div>
+                                            <div class="cart-price fw-normal">Rs.724.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <input type="number" value="1" class="cart-quantity w-50 mt-5 text-center">
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="cart-amt text-center mt-5">Rs.72</div>
+                                    </div>
+                                    <p class="remove-btn text-danger text-center col-2 fs-5 mt-5"><i
+                                            class="fa-regular fa-trash-can"></i></p>
+                                    <hr class="mt-4">
+                                </div>
+                            </div>-->
+
+                           
+                        </div>
+
+                        <!--cart buttons-->
+                        <div class="d-flex justify-content-between mt-3">
+                            <button type="button" id="checkbtn1" class="btn btn-outline-success">Continue
+                                Shopping</button>
+                            <button type="button" id="checkbtn2" onclick="loadcheckoutpage()" class="btn btn-success">checkout</button>
+                        </div>
+                    </div>
+                </div>
+                <!--footer for cart-->
+                <div class="container-fluid" style="background-color: rgba(47,43,44,255);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-3 my-5 text-muted">
+                                <h4 class="my-4 text-white">ZARA Fashion</h4>
+                                <h6>About Us</h6>
+                                <h6>Careers</h6>
+                                <h6>Press</h6>
+                                <h6>Sell with Us</h6>
+                            </div>
+                            <div class="col-12 col-md-3 my-5 text-muted">
+                                <h4 class="my-4 text-white">Help</h4>
+                                <h6>Payments</h6>
+                                <h6>Shipping</h6>
+                                <h6>Return & Cancellation</h6>
+                                <h6>FAQ</h6>
+                            </div>
+                            <div class="col-12 col-md-3 my-5 text-muted">
+                                <h4 class="my-4 text-white">Terms and Policies</h4>
+                                <h6>Privacy Policies</h6>
+                                <h6>Support Policies</h6>
+                                <h6>Terms of Sales</h6>
+                                <br>
+                                <h4 class="text-white">Pay with</h4>
+                                <img class="my-3" src="./label imgs/zpstock-image-758.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-3 my-5 text-white">
+                                <h4 class="my-4">Contact Us</h4>
+                                <h6><i class="fa-solid fa-phone"></i> +12345 421345</h6>
+                                <h6><i class="fa-solid fa-address-card"></i> 3175 Farland Street</h6>
+                                <h6><i class="fa-solid fa-envelope"></i> support@Zara.com</h6>
+                            </div>
+
+                        </div>
+                        <br>
+                        <hr style="color: white;">
+                        <h6 class="text-center text-muted mt-4">Copyrights © ZARA Fashion 2024</h6>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--slide show-->
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-current="true" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./slide_imgs/img.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./slide_imgs/img2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./slide_imgs/img3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./slide_imgs/img4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./slide_imgs/img5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="./slide_imgs/img6.jpg" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!--description text-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 col-sm-3 text-center">
+                <h2><i class="fa-solid fa-truck"></i></h2>
+                <h1>Free Shipping</h1>
+                <p>Enjoy free Shipping on all <br>
+                    your orders.</p>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+                <h2><i class="fa-solid fa-clock"></i></h2>
+                <h1>24/7</h1>
+                <p>Reach out to us,anytime,We are at your service.</p>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+                <h2><i class="fa-solid fa-tag"></i></h2>
+                <h1>Offer Card</h1>
+                <p>Enjoy discounts using offer cards and coupon
+                    codes.</p>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+                <h2><i class="fa-solid fa-lock"></i></h2>
+                <h1>Secure Payments</h1>
+                <p>We provide secure Transaction & Payments</p>
+            </div>
+        </div>
+    </div>
+
+    <!--label card-->
+    <div class="container mt-5" id="navbar-example2">
+
+        <div class="row">
+
+            <div class="col-12 col-md-4 text-center">
+                <div class="card mb-4">
+                    <img src="./label imgs/men label.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">Flat 10% Off on sparkling</h3>
+                        <h4 class="fw-bold">Mens Fashion</h4>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatib
+                            us velit quae quod laborum obcaecati ex ea alias placeat, eveniet endis eum.
+                        </p>
+                        <a href="#scrollspyHeading1" class="btn btn-primary d-grid">Shop now</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            Availabel only on online
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <div class="card mb-4">
+                    <img src="./label imgs/women label.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">Flat 20% Off on flashy</h3>
+                        <h4 class="fw-bold"> womens Fashion</h4>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatib
+                            us velit quae quod laborum obcaecati ex ea alias placeat, eveniet endis eum.
+                        </p>
+                        <a href="#scrollspyHeading2" class="btn btn-primary d-grid">Shop now</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            Availabel only on online
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <div class="card mb-4">
+                    <img src="./label imgs/watch label.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">Flat 30% Off on Titan</h3>
+                        <h4 class="fw-bold">WATCHES</h4>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatib
+                            us velit quae quod laborum obcaecati ex ea alias placeat, eveniet endis eum.
+                        </p>
+                        <a href="#scrollspyHeading3" class="btn btn-primary d-grid">Shop now</a>
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">
+                            Availabel only on online
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--video-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 backvideo">
+                <video autoplay loop muted plays-inline class="backvideo">
+                    <source
+                        src="./label imgs/Cinematic Watch Product Video Commercial Example _ Rolex Timex Omega Samsung Apple Jewelry Amazon Ad(1080P_HD).mp4">
+
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!--sale_badge-->
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="all display-3 fw-bold bg-dark text-white rounded-pill p-2">HURRY! <span>LAST 3 DAYS </span>
+                    OF SALE</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--men container-->
+    <div class="container-fluid bg-white">
+        <!--mens section-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-start">
+                    <h1 class="fw-bold" style="font-size:4rem;"><u>MENS</u></h1>
+                </div>
+            </div>
+        </div>
+        <!--mens products-->
+        <div class="container mt-5" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+            class="scrollspy-example" tabindex="0">
+
+            <div class="row mb-5 " id="scrollspyHeading1">
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+
+                        <div class="card-body">
+                            <img src="./shoping imgs/tshirtimg1.avif" id="clothes-img" alt="" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title "
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;"
+                                id="clothes-title">Urban
+                                Buccachi</h3>
+                            <h4 class="mb-0">Casual T-shirt</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.378</span> <span
+                                    style="color: black;"><del>MRP₹999</del></span> (73% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹373
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/tshirtimg2,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">WRANGLER
+                            </h3>
+                            <h4 class="mb-0">Shirt with Spread Collar</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.879</span> <span
+                                    style="color: black;"><del>MRP₹999</del></span> (30% OFF)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹360
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/tshirtimg3,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">WOXEN
+                            </h3>
+                            <h4 class="mb-0">Spread Collared Checked shirt</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.378</span> <span
+                                    style="color: black;"><del>MRP₹799</del></span> (53% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹353
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--second row-->
+            <div class="row">
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/tshirtimg4,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">DNMX
+                                JEANS</h3>
+                            <h4 class="mb-0">Heavily Washed Skinny Fit Jeans</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.917</span> <span
+                                    style="color: black;"><del>MRP₹1799</del></span> (49% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(255, 255, 255);">
+                                Off price ₹833
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/tshirtimg5,3.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">JOHN
+                                PLAYERS JEANS</h3>
+                            <h4 class="mb-0">Heavily Washed Skinny Fit Jean</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.850 </span> <span
+                                    style="color: black;"><del>MRP₹2799</del></span> (73% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(2, 74, 4);">
+                                Off price ₹833
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-5 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/tshirtimg6,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">THE BEAR
+                                HOUSE
+                            </h3>
+                            <h4 class="mb-0">Textured Shirt with Patch Pocket
+                            </h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.850 </span> <span
+                                    style="color: black;"><del>MRP₹2599</del></span> (63% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(2, 74, 4);">
+                                Off price ₹833
+
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!--women container-->
+    <div class="container-fluid bg-white">
+        <!--womens section-->
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 text-start">
+                    <h1 class="fw-bold" style="font-size:4rem;"><u>WOMENS</u></h1>
+                </div>
+            </div>
+        </div>
+        <!--womens products-->
+        <div class="container mt-5" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+            class="scrollspy-example" tabindex="0">
+
+            <div class="row mb-5" id="scrollspyHeading2">
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/womentshirtimg1.webp" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">SIYAHI
+                            </h3>
+                            <h4 class="mb-0">Floral Embroidered Straight Kurta</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.350 </span> <span
+                                    style="color: black;"><del>MRP₹699</del></span> (53% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹283
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/womentshirtimg2,1.avif" alt="" id="clothes-img"
+                                class="card-img-top" style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">FYRE
+                                ROSE</h3>
+                            <h4 class="mb-0">Button Shacket with Patch Pocket</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.800 </span><span
+                                    style="color: black;"><del>MRP₹1999</del></span> (60% OFF)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹747
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/womentshirtimg3,1.avif" alt="" id="clothes-img"
+                                class="card-img-top" style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">CLARKS
+                            </h3>
+                            <h4 class="mb-0">Corduroy Jacket with Flap Pockets</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.950 </span> <span
+                                    style="color: black;"><del>MRP₹2999</del></span> (73% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹859
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--second row-->
+            <div class="row">
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/womentshirtimg4,1.webp" alt="" id="clothes-img"
+                                class="card-img-top" style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">DINMAR
+                            </h3>
+                            <h4 class="mb-0">Geometric Print V-Neck Top</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.400 </span> <span
+                                    style="color: black;"><del>MRP₹999</del></span> (60% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: green;">
+                                Off price ₹340
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/womentshirtimg5,1.webp" alt="" id="clothes-img"
+                                class="card-img-top" style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">SHEETAL
+                                ASSOCIATES</h3>
+                            <h4 class="mb-0">Geometric Print V-Neck Top</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.450 </span> <span
+                                    style="color: black;"><del>MRP₹999</del></span> (60% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(2, 74, 4);">
+                                Off price ₹340
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid ">Out Of Stock</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-5 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/womentshirtimg6,1.jpg" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">AARKE
+                                RITU KUMAR</h3>
+                            <h4 class="mb-0">Solid Dress</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.560 </span><span
+                                    style="color: black;"><del>MRP₹1299</del></span> (73% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(2, 74, 4);">
+                                Off price ₹500
+
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--slide show_2-->
+    <div class="container-fluid  bg-white">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./slide_imgs/slide1.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./slide_imgs/slide2.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./slide_imgs/slide3.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./slide_imgs/slide4.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./slide_imgs/slide5.avif" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+        </div>
+    </div>
+
+    <!--badge for top brands-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="all display-4 fw-bold bg_graide_nt text-white p-4"
+                    style="font-family: 'Times New Roman', Times, serif;">TOP-OF-THE-LINE BRANDS</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--watch container-->
+    <div class="container-fluid bg-white">
+        <!--watch section-->
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 text-start">
+                    <h1 class="fw-bold" style="font-size:4rem;"><u>WATCHES</u></h1>
+                </div>
+            </div>
+        </div>
+        <!--watch products-->
+        <div class="container mt-5" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+            class="scrollspy-example" tabindex="0">
+
+            <div class="row mb-5" id="scrollspyHeading3">
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/wtachimg1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">CASIO
+                            </h3>
+                            <h4 class="mb-0">ES3838 Watch with Leather Strap</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.6117 </span> <span
+                                    style="color: black;"><del>MRP₹11,995</del></span>(62% OFF)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹6038
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src=".//shoping imgs/wtachimg2,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">ROLEX
+                            </h3>
+                            <h4 class="mb-0">AX1736 Water-Resistant Watch</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.10197 </span> <span style="color: black;"><del>MRP₹16,995
+                                    </del></span> (60% OFF)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹9177
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/wtachimg3,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">
+                                INGERSOLL</h3>
+                            <h4 class="mb-0">I00408 Watch with Metallic Strap</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.11350 </span><span
+                                    style="color: black;"><del>MRP₹29,750</del></span> (50% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color:green;">
+                                Off price ₹11283
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--second row-->
+            <div class="row">
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/wtachimg4,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">FOSSIL
+                            </h3>
+                            <h4 class="mb-0">FTW4059 GEN 6 with Stainless</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                rs.24500 (55% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: green;">
+                                Off price ₹23795
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid ">Out of Stock</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-4 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/wtachimg5,1.webp" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">TITAN
+                            </h3>
+                            <h4 class="mb-0">NQ90142SL01 Analogue Watch</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.5450</span><span style="color: black;"><del>MRP₹6,295
+                                    </del></span> (50% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(255, 255, 255);">
+                                Off price ₹833
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4 text-center">
+                    <div class="card mb-5 border-white">
+                        <div class="card-body">
+                            <img src="./shoping imgs/wtachimg6,1.avif" alt="" id="clothes-img" class="card-img-top"
+                                style="height:400px; object-fit: contain;">
+                            <h3 class="card-title " id="clothes-title"
+                                style=" color: rgb(120, 74, 41); font-family: 'Times New Roman', Times, serif;">ARMANI
+                                EXCHANGE</h3>
+                            <h4 class="mb-0">Water-Resistant Chronograph</h4>
+                            <p class="card-text fw-bold mb-1" style=" color: rgb(120, 74, 41);">
+                                <span id="clothes-price">rs.14350 </span>(23% off)
+                            </p>
+                            <p class="card-text fw-bold " style=" color: rgb(2, 74, 4);">
+                                Off price ₹13795
+
+
+                            </p>
+                            <a type="button" class="btn btn-secondary d-grid add-cart">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer image-->
+    <div class="container-fluid footer_bg">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <!--footer discription-->
+    <div class="container-fluid text-center" style="background-color: rgba(33, 53, 69, 255);">
+        <div class="row">
+            <div class="col-12 text-white">
+                <h1 style="color: #74633c;" class="mb-0"><strong> GO BUY CARES</strong></h1>
+                <h2 class="mb-0">WE DO NOT ASK FOR YOUR BANK ACCOUNT OR CARD DETAILS VERBALLU OR TELEPHONICALLY.</h2>
+                <h2>WE ALSO DO NOT ASK FOR MONEY TO PARTICIPATE IN ANY OF OUR OFFERS OR RUN ANY LUCKY DRAWS.</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--footer discription_2-->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center">
+                <h1><i class="fa-solid fa-rotate"></i></h1>
+                <h2>EASY EXCHANGE</h2>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <h1><i class="fa-solid fa-hand-holding-heart"></i></h1>
+                <h2>100% HANDPICKED</h2>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <h1><i class="fa-solid fa-circle-check"></i></h1>
+                <h2>ASSURED QUALITY</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--footer_input-->
+
+    <div class="container-fluid p-4" style="background-color: rgba(57,56,56,255);">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center text-white mb-3">Subscribe to our newsletter</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-0 col-md-3">
+
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <form class="row g-2">
+                    <div class="col-auto">
+                        <input type="text" class="form-control rounded-pill text-white"
+                            style="background-color: rgba(57,56,56,255);" placeholder="Name">
+                    </div>
+                    <div class="col-auto">
+                        <input type="email" class="form-control rounded-pill text-white"
+                            style="background-color: rgba(57,56,56,255);" placeholder="Email">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn bg-white text-muted rounded-pill mb-2">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-0 col-md-3">
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="container-fluid" style="background-color: rgba(47,43,44,255);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 my-5 text-muted">
+                    <h4 class="my-4 text-white">ZARA Fashion</h4>
+                    <h6>About Us</h6>
+                    <h6>Careers</h6>
+                    <h6>Press</h6>
+                    <h6>Sell with Us</h6>
+                </div>
+                <div class="col-12 col-md-3 my-5 text-muted">
+                    <h4 class="my-4 text-white">Help</h4>
+                    <h6>Payments</h6>
+                    <h6>Shipping</h6>
+                    <h6>Return & Cancellation</h6>
+                    <h6>FAQ</h6>
+                </div>
+                <div class="col-12 col-md-3 my-5 text-muted">
+                    <h4 class="my-4 text-white">Terms and Policies</h4>
+                    <h6>Privacy Policies</h6>
+                    <h6>Support Policies</h6>
+                    <h6>Terms of Sales</h6>
+                    <br>
+                    <h4 class="text-white">Pay with</h4>
+                    <img class="my-3" src="./label imgs/zpstock-image-758.png" alt="">
+                </div>
+                <div class="col-12 col-md-3 my-5 text-white">
+                    <h4 class="my-4">Contact Us</h4>
+                    <h6><i class="fa-solid fa-phone"></i> +12345 421345</h6>
+                    <h6><i class="fa-solid fa-address-card"></i> 3175 Farland Street</h6>
+                    <h6><i class="fa-solid fa-envelope"></i> support@Zara.com</h6>
+                </div>
+
+            </div>
+            <br>
+            <hr style="color: white;">
+            <h6 class="text-center text-muted mt-4">Copyrights © ZARA Fashion 2024</h6>
+            <br>
+            <br>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--script link for bootstrap-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!--external js-->
+    <script src="./assets/js/mainpage.js"></script>
+</body>
+
+</html>

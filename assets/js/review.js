@@ -1,0 +1,63 @@
+let buttons1 = document.querySelector("#paymentbtn")
+
+
+
+document.getElementById("radiobtn1").addEventListener("click", () => {
+    buttons1.innerHTML="Make Payment"
+    buttons1.value = "online"
+   
+})
+document.getElementById("radiobtn2").addEventListener("click", () => {
+    buttons1.innerHTML="Complete Order"
+    buttons1.value = "cod"
+   
+})
+
+buttons1.addEventListener("click",nav)
+
+function nav(){
+    if(buttons1.value=="online"){
+        window.location.href="onlinepyt.html"
+    }
+    else{
+        window.location.href="cod.html"
+    }
+}
+
+document.addEventListener("DOMContentLoaded", loadfun);
+
+function loadfun() {
+    loadcontent();
+}
+
+function loadcontent() {
+    let buyerdetails = JSON.parse(localStorage.getItem("buyer's form details"))
+
+    const fname = document.getElementById("fname")
+    const lname = document.getElementById("lname")
+    const phone_no = document.getElementById("mobie_no")
+
+    fname.innerHTML = buyerdetails.fname
+    lname.innerHTML = buyerdetails.lname
+    phone_no.innerHTML = buyerdetails.phoneno
+
+   
+   var address = buyerdetails.address
+   var city = buyerdetails.city
+   var country = buyerdetails.country
+   var state = buyerdetails.state
+   var zipcode = buyerdetails.zipcode
+  
+
+    var details_1 = document.getElementById("address_1")
+    var details_2 = document.getElementById("address_2")
+    details_1.innerHTML = (`${address},${city},${zipcode}`)
+    details_2.innerHTML = (`,${state},${country}`)
+
+
+    total = JSON.parse(localStorage.getItem("totalprice"))
+    items = JSON.parse(localStorage.getItem("arryitems"))
+	document.getElementById("total").innerHTML=total
+	document.getElementById("Subtotal").innerHTML=total
+	document.getElementById("totalitem").innerHTML=items
+}

@@ -1,0 +1,38 @@
+body{
+    background-color: aliceblue;
+}
+.backvideo{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.all span {
+    animation-name: last;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+@keyframes last {
+   33%{
+    color: white;
+   }
+   33%{
+    color: red;
+   }
+   34%{
+    color: white;
+   }
+}
+.bg_graide_nt{
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.footer_bg{
+    position: relative;
+    height: 55vh;
+    background-image: url(./footerimg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

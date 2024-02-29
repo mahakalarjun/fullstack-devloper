@@ -1,0 +1,106 @@
+
+/* site code started */
+.zphero h1, .zphero h2, .zphero h3, .zphero h4, .zphero h5, .zphero h6 {
+  line-height: normal; }
+
+.zphero h2 {
+  font-size: 4em; }
+
+.zphero .zpcontainer {
+  width: 90%;
+  max-width: 1600px; }
+
+.zscustom-section-fitness-05 {
+  padding: 0px !important; }
+  .zscustom-section-fitness-05 .zswhite-box {
+    padding: 30px; }
+
+.zscustom-section-fitness-06 .zsremove-padding [class^="zpcol-md-"] {
+  padding: 0px; }
+
+.zscustom-section-fitness-06 .zsremove-padding .zswhite-box {
+  padding: 45px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
+
+.zscustom-section-fitness-06 .zsoverlap-image {
+  margin-top: -20%; }
+
+.zscustom-section-fitness-06 .zsspace-medium {
+  padding-left: 15px; }
+
+.theme-breadcrumb-container.theme-section {
+  padding: 30px 0px; }
+
+/* site code ended */
+/* product list */
+.theme-prod-box .theme-product-box-container .theme-rating, .theme-prod-box.theme-product-list-style-05 .theme-product-box-container .theme-rating {
+  margin-bottom: 20px; }
+
+.theme-prod-box .theme-product-box-container .theme-product-details-container:hover .theme-product-quick-view-button, .theme-prod-box.theme-product-list-style-05 .theme-product-box-container .theme-product-details-container:hover .theme-product-quick-view-button {
+  bottom: -36px;
+  transition: none; }
+
+.theme-prod-box .theme-product-box-container .theme-product-details-container .theme-product-quick-view-button, .theme-prod-box.theme-product-list-style-05 .theme-product-box-container .theme-product-details-container .theme-product-quick-view-button {
+  width: 100%;
+  margin-left: auto;
+  left: 0px;
+  border-radius: 2px; }
+
+.theme-prod-box .theme-prod-coupons-code-container .theme-prod-coupons-code, .theme-prod-box.theme-product-list-style-05 .theme-prod-coupons-code-container .theme-prod-coupons-code {
+  margin-bottom: 20px; }
+
+/*end Product list */
+@media all and (min-width: 768px) {
+  .zs-custom-bestwatch .zpcontainer .zs-custom-bestwatch-row .zscustom-sel-column {
+    width: 50%; } }
+
+@media all and (min-width: 992px) {
+  .zs-custom-bestwatch .zpcontainer .zs-custom-bestwatch-row .zscustom-sel-column {
+    width: 25%; } }
+
+@media all and (min-width: 768px) {
+  .zs-custom-bestwatch .zpcontainer .zs-custom-bestwatch-row .zscustom-sel-column {
+    width: 50%; } }
+
+@media all and (min-width: 992px) {
+  .zs-custom-bestwatch .zpcontainer .zs-custom-bestwatch-row .zscustom-sel-column {
+    width: 25%; } }
+
+.banner .zphero-slides .zphero-slider-container .zpcontainer {
+  margin: 0 auto;
+  width: 100%; }
+  @media all and (min-width: 992px) {
+    .banner .zphero-slides .zphero-slider-container .zpcontainer {
+      width: 80%;
+      max-width: 1600px; } }
+  @media all and (min-width: 768px) {
+    .banner .zphero-slides .zphero-slider-container .zpcontainer .zs-custom-banner-row .zscustom-banner-col01 {
+      width: 40%; } }
+  @media all and (min-width: 768px) {
+    .banner .zphero-slides .zphero-slider-container .zpcontainer .zs-custom-banner-row .zscustom-ban-col02 {
+      width: 60%; } }
+.zs-custom-news-section .zpcontainer-fluid .zs-custom-news-section-row .zpelem-col .zscustom-newsletter .zpnewsletter-container h2 {
+  text-align: left; }
+
+.zs-custom-news-section .zpcontainer-fluid .zs-custom-news-section-row .zpelem-col .zscustom-newsletter .zpnewsletter-container .zpform-container {
+  justify-content: left; }
+
+.theme-product-details-tabs-and-content-container {
+  margin-top: 0px; }
+
+.theme-product-details-style-06 .theme-content-area-inner .theme-section:nth-child(2) {
+  padding: 0 0 10px; }
+
+.zpcomment-list-container .zpcomment-list .zpcomment-list-inner .zpcomment-list-item .zpcomment-user-name {
+  font-size: 90% !important;
+  font-weight: normal;
+  font-family: sans-serif; }
+
+.zpcomment-rating-result h4, .zpcomment-heading-prevnext-container h4 {
+  font-size: 1.2em; }
+
+.theme-prod-box.theme-product-list-style-05 .theme-product-box-container .theme-product-name {
+  flex: 0 0 auto; }
+
+.theme-productfilter-enable .theme-produt-category-list-row .theme-prod-box.theme-product-list-style-05 .theme-product-box-container .theme-product-details-container:hover .theme-product-quick-view-button {
+  bottom: 0px; }

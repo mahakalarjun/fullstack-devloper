@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--font icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
+    <title>ZARA Fashion</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark ">
+
+            <div class="container">
+
+                <a href="./Mainpage.html" class="navbar-brand ms-sm-5 mx-md-auto">
+                    <img src="./label imgs/logo zara.png" width="110" height="45" alt="" loading="lazy"
+                        class="d-inline-block align-top my-2">
+                </a>
+
+
+            </div>
+        </nav>
+    </header>
+    <!--otp verify-->
+    <!--sign in-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <div class="d-flex justify-content-center">
+
+                    <div class="card border-white" style="width: 28rem;">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Verify your sign-up</h5>
+
+                            <h6 class="card-subtitle my-3   text-muted"><small>Enter the one-time password sent to your
+                                    email address.</small></h6>
+
+                            <div class="row">
+                                <div class="col-12 col-md-10">
+                                    <div class="input-group mb-3">
+                                        <input type="text" value="" id="email_val" class="form-control bg-white" style="width: rem;" disabled>
+                                        <button class="btn btn-outline-secondary" id="email_change" type="button">Change</button>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+
+                                </div>
+                            </div>
+
+                            <input type="email" class="form-control" id="emailbox"
+                                placeholder="enter one-time password">
+
+                            <p class="text-danger mt-1" id="error_msg"></p>
+
+                            <small class="otpre">Resend in <span class="sec"></span></small>
+                            <small class="reotp" style="display: none; cursor: pointer;" id="resend_otp">Resend OTP</small>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn text-white mt-3"
+                                    style="background-color: rgb(7, 141, 116);" onclick="validate_otp()">Verify</button>
+                            </div>
+
+                            <div class="text-center">
+                                <small>Don't have an account?<span> <a href="./signup.html" style="text-decoration: none;">Sign
+                                            Up</a></span></small>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--script link for bootstrap-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!--external js link-->
+<script src="./assets/js/otpverify.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <!--font icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" />
+    <title>ZARA Fashion</title>
+</head>
+
+<body>
+    <!--online pyt container-->
+    <div class="container my-5">
+        <div class="row ">
+            <div class="col-3">
+
+            </div>
+            <div class="col-12 col-md-6 ">
+                <div class="card">
+                    <!--card-header-->
+                    <h5 class="card-header bg-primary"> <img src="./label imgs/logo zara.png" width="120" height="55"
+                            alt="" loading="lazy" class=" mx-auto d-block align-top">
+                    </h5>
+                    <h5 class="card-header p-4 text-center ">
+                        RS.<span id="cardamt">800</span>.00
+                    </h5>
+
+                    <!--card body-->
+                    <div class="card-body">
+                        <h4 class="payinfo my-2">Payment Information</h4>
+                        <p class="testcrd mt-3">Test Card Numbers : <span class="ms-3 text-primary success">Success</span>
+                            <span class="ms-3 text-primary failure">Payment Failure</span>
+                        </p>
+                        <!--input field-->
+
+                        <div class="col-12 mt-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-end-0 cardbox" id="card_numb"
+                                    placeholder="Card Number*" onblur="card_num_validation()">
+                                <span class="input-group-text bg-white fs-3 border-start-0" id="basic-addon2"><i
+                                        class="fa-brands fa-cc-visa"></i></span>
+                            </div>
+                            <div id="card_error" class="text-danger"></div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12 col-md-4 mt-4">
+                                <select id="card_month" class="form-select monthbox" onblur="monthselect()">
+                                    <option selected disabled value="Default">Month*</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <div id="month_error" class="text-danger"></div>
+                            </div>
+
+                            <div class="col-12 col-md-4 mt-4">
+                                <select id="card_year" class="form-select yearbox" onblur="yearselect()">
+                                    <option selected disabled value="Default">Year*</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                    <option>2034</option>
+                                    <option>2035</option>
+                                    <option>2036</option>
+                                    <option>2037</option>
+                                    <option>2038</option>
+                                    <option>2039</option>
+                                    <option>2040</option>
+                                    <option>2041</option>
+                                    <option>2042</option>
+                                    <option>2043</option>
+                                    <option>2044</option>
+                                </select>
+                                <div id="year_error" class="text-danger"></div>
+                            </div>
+
+                            <div class="col-12 col-md-4 mt-4">
+                                <div class="input-group">
+                                    <input type="password" class="form-control border-end-0 cvvbox" id="cvv_numb"
+                                        placeholder="CVV*" maxlength="3" onblur="cvv_validation()">
+                                    <span class="input-group-text bg-white fs-3 border-start-0"><i
+                                            class="fa-regular fa-credit-card"></i></span>
+                                </div>
+                                <div id="cvv_error" class="text-danger"></div>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-12 col-md-6 mt-4">
+                                <input type="text" class="form-control " id="first_name" placeholder="First Name">
+                            </div>
+                            <div class="col-12 col-md-6 mt-4">
+                                <input type="text" class="form-control " id="last_name" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class=" d-flex justify-content-center">
+                                <button class="btn btn-primary w-25 " onclick="validate()">Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-primary">
+                        <small></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--script link for bootstrap-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!--external js link-->
+    <script src="./assets/js/onlinepyt.js"></script>
+</body>
+
+</html>

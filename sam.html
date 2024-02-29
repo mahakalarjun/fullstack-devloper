@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            
+        </div>
+    </div>
+</body>
+<div class="row my-5 needs-validation">
+    <!--form div-->
+    <div class="col-12 col-md-8">
+        <h6 class="mb-3">Shipping Address</h6>
+        <form action="" method="post" class="row g-3" >
+
+            <div class="col-12 col-md-6">
+                <label for="FirstName" class="form-label">First Name <span>*</span></label>
+                <input type="text" required class="form-control " id="FirstName">
+                <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+            </div>
+            
+
+            <div class="col-12  col-md-6">
+                <label for="lastName" class="form-label">Last Name <span>*</span></label>
+                <input type="text"required class="form-control" id="lastName">
+            </div>
+
+            <div class="col-12">
+                <label for="email" class="form-label">Email <span>*</span></label>
+                <input type="email"required class="form-control" id="email">
+            </div>
+
+            <div class="col-12">
+                <label for="address" class="form-label">Address <span>*</span></label>
+                <textarea name="address"required id="address" cols="60" rows="4" class="form-control"></textarea>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="inputCity" class="form-label">City <span>*</span></label>
+                <input type="text"required class="form-control" id="inputCity">
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="inputState" class="form-label">Country <span>*</span></label>
+                <select id="inputState"required class="form-select">
+                    <option selected>Select Country</option>
+                    <option>India</option>
+                    <!-- <option>United States</option> -->
+                </select>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="inputState" class="form-label">State / Province <span>*</span></label>
+                <select id="inputState"required class="form-select">
+                    <option selected>State / Province</option>
+                    <option>Tamil Nadu</option>
+                    <option>Kerala</option>
+                    <option>Delhi</option>
+                    <option>Andhra Pradesh</option>
+                </select>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="inputCity" class="form-label">ZIP Code <span>*</span></label>
+                <input type="text"required class="form-control" id="inputCity">
+            </div>
+
+            <div class="col-12">
+                <label for="lastName" class="form-label">Telephone <span>*</span></label>
+                <input type="text"required class="form-control" id="lastName">
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" checked id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Billing Address is same as Shipping Address
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 text-end mb-5">
+                <button type="submit" class="btn btn-success btn-lg">Continue</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-1"></div>
+
+    <!--coupon div-->
+    <div class="col-10 col-md-3 my-5 sticky-top">
+        <div class="card border-white">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Coupon Code"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button" id="button-addon2">Apply</button>
+            </div>
+            <hr class="mt-1">
+            <h6>Order Summary</h6>
+            <div class="d-flex justify-content-between">
+                <p>Subtotal (1 Items)</p>
+                <p>Rs.295.00</p>
+            </div>
+            <hr class="mt-1" style="height: 3px; background-color: rgb(0, 0, 0);">
+            <div class="d-flex justify-content-between">
+                <p>Total</p>
+                <h6>Rs.295.00</h6>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
