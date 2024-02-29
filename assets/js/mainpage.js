@@ -170,7 +170,7 @@ var checkoutbutton1 = document.getElementById("checkbtn1")
 
 
 checkoutbutton1.addEventListener("click", () => {
-    window.location.href = "Mainpage.html"
+    window.location.href = "index.html"
 })
 function loadcheckoutpage() {
     if (itemList.length > 0) {
