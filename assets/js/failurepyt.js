@@ -12,5 +12,5 @@ function navtopty(){
     window.location.href="review.html"
 }
 function navtomainpage(){
-    window.location.href="Mainpage.html"
+    window.location.href="index.html"
 }
